@@ -27,3 +27,5 @@
 
 ~~~
 4. You would use the details provided by the change notification outlined in step 3 and parse the JSON for the ID of the message, then take whatever action on the message you would to perform i.e. move the message, get the message body or subject line etc.  Any additional action will require you to make a call to the appropriate Graph API passing the Message ID and a Authorization Token.
+
+### How to setup the Logic App to properly handle the Validation Token as well as the change notification?
