@@ -4,5 +4,5 @@
 
 2. When a change notification occurs the notification URL called via a POST request with the following details: <br>
 <TBD>
-&nbsp;&nbsp;&nbsp;&nbsp;Graph will continue to retry the notification if it does not receive a 202 status within 3 seconds.  It's a best practice to send the 202 status as soon as possible for you execute any business logic because Graph does not care if you business logic fails are succeeds.   
+<p>Graph will continue to retry the notification if it does not receive a 202 status within 3 seconds.  It's a best practice to send the 202 status as soon as possible for you execute any business logic because Graph does not care if you business logic fails are succeeds. </p>  
 ss
