@@ -1,4 +1,4 @@
-#Graph Subscriptions
+# Graph Subscriptions
 For some of the examples will need to create a Graph Subsciption.  Below are some examples of the subscriptions that need to be created for the examples provided in this Repo
 
 #Important Notes
