@@ -26,5 +26,4 @@
 }
 
 ~~~
-Graph will continue to retry the notification if it does not receive a 202 status within 3 seconds.  It's a best practice to send the 202 status as soon as possible for you execute any business logic because Graph does not care if you business logic fails are succeeds. </p>  
-
+4. You would use the details provided by the change notification outlined in step 3 and parse the JSON for the ID of the message, then take whatever action on the message you would to perform i.e. move the message, get the message body or subject line etc.  Any additional action will require you to make a call to the appropriate Graph API passing the Message ID and a Authorization Token.
