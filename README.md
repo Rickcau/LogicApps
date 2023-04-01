@@ -5,6 +5,6 @@ Logic App repo for useful examples
 <ul>
   <li><a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD" target="_blank">How To - Create Graph Subscriptions</a>
 </li>
-  <li>Item two.</li></ul>
+  <li><a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD#" target="_blank">How To - Create Graph Subscriptions</a></li></ul>
 
 ![How To - Graph Subscriptions](Graph%20Subscriptions.MD))
