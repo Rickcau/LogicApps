@@ -2,4 +2,10 @@
 Logic App repo for useful examples
 
 ### Setting up Graph Subscriptions ###
-<ul><li>![How to Graph Subscriptions](Graph Subscriptions.MD)</li><li>Item two.</li></ul>
+<ul>
+  <li>![How to Graph Subscriptions](Graph Subscriptions.MD)</li>
+  ![Image alt text](https://img.youtube.com/vi/YOUTUBE-ID/0.jpg)
+  
+  
+  
+  <li>Item two.</li></ul>
