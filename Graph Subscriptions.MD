@@ -8,4 +8,7 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 | Graph Explorer     | https://developer.microsoft.com/en-us/graph/graph-explorer     |
 
 # Examples
-### Test ###
+### Creating a Change Notification for subscription for emails in a Shared Mailbox ###
+
+
+### Get a list of Graph subscriptions ### 
