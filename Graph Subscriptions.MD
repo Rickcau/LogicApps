@@ -11,4 +11,6 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 ### Creating a Change Notification for subscription for emails in a Shared Mailbox ###
 
 
-### Get a list of Graph subscriptions ### 
+### Get a list of Graph subscriptions ###
+
+![GetSubs](assets/GraphGetSubs.jpg)
