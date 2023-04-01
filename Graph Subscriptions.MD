@@ -12,6 +12,7 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 
 
 ### Get a list of Graph subscriptions ###
-1. Navigate to (https://developer.microsoft.com/en-us/graph/graph-explorer) and make sure you are login to and account that has permissions to Graph.
+1. Navigate to (https://developer.microsoft.com/en-us/graph/graph-explorer) and make sure you are logged-in to an account that has permissions to Graph.
 2. Send a GET request to the subscriptions endpoint https://graph.microsoft.com/v1.0/subscriptions.  Below is an example.
 ![GetSubs](assets/GraphGetSubs.jpg)
+If you have any subscriptions they will be noted in the Response Preview Window.
