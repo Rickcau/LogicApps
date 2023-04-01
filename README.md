@@ -10,4 +10,4 @@ Logic App repo for useful examples
   <li>Item two.</li></ul>
 
 ![CreateSub](assets/GraphCreateSub.jpg)
-![CreateSub](main/Graph%20Subscriptions.MD))
+![CreateSub](Graph%20Subscriptions.MD))
