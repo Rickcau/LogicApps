@@ -6,6 +6,7 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 | **Description**    | **Link**                                                       |
 | ---                | ---                                                            |
 | Graph Explorer     | https://developer.microsoft.com/en-us/graph/graph-explorer     |
+| Graph Subscriptions | https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http |
 
 # Examples
 ### Creating a Change Notification for subscription for emails in a Shared Mailbox ###
