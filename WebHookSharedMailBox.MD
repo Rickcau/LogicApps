@@ -1,1 +1,1 @@
-# Creating a Logic App to be used as a WebHook for Graph Change Notifications
+# Logic App WebHook for Graph Change Notifications
