@@ -9,7 +9,7 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 
 # Examples
 ### Creating a Change Notification for subscription for emails in a Shared Mailbox ###
-You can create a subscription by calling the subscriptions endpoint and in the Request body passing proper JSON.  Below is an example of that the JSON shoujld look like.
+You can create a subscription by send a POST request to the subscriptions endpoint and in the Request body passing the proper JSON.  Below is an example of that the JSON shoujld look like.
 ~~~
 {
    "changeType": "created",
@@ -20,6 +20,8 @@ You can create a subscription by calling the subscriptions endpoint and in the R
    "latestSupportedTlsVersion": "v1_2"
 }
 ~~~
+Below is a screenhot of what this would look like in Graph Explorer.
+
 
 ### Get a list of Graph subscriptions ###
 1. Navigate to (https://developer.microsoft.com/en-us/graph/graph-explorer) and make sure you are logged-in to an account that has permissions to Graph.
