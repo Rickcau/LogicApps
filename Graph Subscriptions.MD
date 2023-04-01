@@ -21,6 +21,7 @@ You can create a subscription by send a POST request to the subscriptions endpoi
 }
 ~~~
 Below is a screenhot of what this would look like in Graph Explorer.
+![CreateSub](assets/GraphCreateSub.jpg)
 
 
 ### Get a list of Graph subscriptions ###
