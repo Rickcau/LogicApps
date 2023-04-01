@@ -12,5 +12,6 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 
 
 ### Get a list of Graph subscriptions ###
+1. Navigate to [https](https://developer.microsoft.com/en-us/graph/graph-explorer  )
 
 ![GetSubs](assets/GraphGetSubs.jpg)
