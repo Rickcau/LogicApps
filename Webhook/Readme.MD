@@ -37,5 +37,5 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
       "type": "object"
     }
     ~~~
- 3. We need to initialize 3 variables and extract the Content-Type from the Headers and store that in a variable. 
+ 3. We need to initialize 3 variables and extract the Content-Type from the Headers and store that in a variable. We need to check the Content-Type to determine if it’s **text/plain** or **application/json**.  If the Content-Type is **text/plain** we know we have a Validation Token, if it’s **application/json** we know we have a change notification and we can process accordingly. <br>
  ![Initi Vars Store Content-Type](/assets/InitiVars-ContentType.jpg)
