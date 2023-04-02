@@ -172,4 +172,7 @@ Since we are subscribing to change notifications for Share Mailboxes, if we plan
 2. Create an App Registeration as outlined in the following section.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/AppRegisteration.MD" target="_blank">How To - Create App Registeration</a>
 
+3. The details from the above two steps are to be used in the **HTTP Get oAuthToken** action.
+![GetAuthToken](/assets/HTTPGetAuth.jpg)<br>
+
 
