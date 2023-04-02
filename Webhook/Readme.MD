@@ -7,7 +7,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
 ![HTTP Trigger](/assets/HTTP.jpg)
 
 2. Now we need to parse the Headers so we can extract the Content-Type (we will make use of these to determine if we are receiving a Validation Token or a Change Notification). Add a Parse JSON Action and use the schema below.<br>
-![Parse Headers](/assets/ParseHeaders1.jpg)
+![Parse Headers](/assets/ParseHeaders1.jpg) <br>
 
     ~~~
     {
@@ -36,6 +36,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
       "type": "object"
     }
     ~~~
+    
  3. We need to initialize 3 variables and extract the Content-Type from the Headers and store that in a variable for processing later.<br>
  ![Initi Vars Store Content-Type](/assets/InitiVars-ContentType.jpg)
  
