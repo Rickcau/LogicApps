@@ -115,7 +115,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
     ~~~
 <br>
 
-### Add business logic ### 
+### Add business logic (optional) ### 
 At this point, you would add your business logic to the ***application/json Case section***. For example, if you wanted to get the subject line of the message for a Shared Mailbox, you would need to implement the following logic.<br>
 
 1. Send an HTTP POST request to https://login.microsoftonline.com/ to acquire an oAuth Token.  Since we are using Shared Mailboxes the Graph Permissions, we need can only be granted when using delegation, so we must use a Service Account for this.
