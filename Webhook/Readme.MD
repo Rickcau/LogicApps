@@ -5,7 +5,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
 
 1. The first thing we need to do is add an HTTP Trigger
 ![HTTP Trigger](/assets/HTTP.jpg)
-![AppPerms](/assets/AppRegDetails1.jpg)
+
 2.
 
 ~~~
