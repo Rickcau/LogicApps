@@ -37,4 +37,5 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
       "type": "object"
     }
     ~~~
- 3. 
+ 3. We need to initialize 3 variables and extract the Content-Type from the Headers and store that in a variable. 
+ ![Initi Vars Store Content-Type](/assets/InitiVars-ContentType.jpg)
