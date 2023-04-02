@@ -166,4 +166,6 @@ In order to use this Logic App as a Webhook for a Graph Subscription, you will n
 ### Create the Service Account and App Registeration in Azure Active Directory ###
 Since we are subscribing to change notifications for Share Mailboxes, if we plan to take action on those notifications i.e. move message, read message or other actions, we will need use a Service Account and Create an App Registeration. <br>
 
-1. You will need proper permissions to create a user in Azure Active Directory.
+1. You will need proper permissions to create a user in Azure Active Directory and assign it the Security Reader Role.<br>
+![Create User](/assets/NewUser.jpg)<br>
+
