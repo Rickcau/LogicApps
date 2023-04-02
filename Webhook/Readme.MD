@@ -111,3 +111,8 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
     ~~~
     body('Parse_JSON')['value'][0]['resourceData']['id']
     ~~~
+<br>
+## Add business logic
+At this point, you would add your business logic to the **application/json Case section**.
+
+## Create the Graph Subscription
