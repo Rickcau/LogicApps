@@ -115,8 +115,6 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
     ~~~
 <br>
 
-### Let's implement the logic to parse the Validation Token ###
-
 ### Add business logic ### 
 At this point, you would add your business logic to the ***application/json Case section***. For example, if you wanted to get the subject line of the message for a Shared Mailbox, you would need to implement the following logic.<br>
 
