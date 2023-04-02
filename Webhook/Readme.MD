@@ -38,4 +38,5 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
  3. We need to initialize 3 variables and extract the Content-Type from the Headers and store that in a variable for processing later.<br>
  ![Initi Vars Store Content-Type](/assets/InitiVars-ContentType.jpg)
  
- 4. We need to check the Content-Type to determine if it’s **text/plain** or **application/json**.  If the Content-Type is **text/plain** we know we have a Validation Token, if it’s **application/json** we know we have a change notification and we can process accordingly. 
+ 4. Let's add a Switch Action so we can check the Content-Type for **text/plain** or for **application/json**. If the Content-Type is **text/plain** we know we have a Validation Token, if it’s **application/json** we know we have a change notification and we can process accordingly. 
+ ![Switch](/assets/Switch.jpg)
