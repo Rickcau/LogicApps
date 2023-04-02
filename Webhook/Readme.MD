@@ -169,7 +169,7 @@ Since we are subscribing to change notifications for Share Mailboxes, if we plan
 1. You will need proper permissions to create a user in Azure Active Directory and assign it the Security Reader Role.<br>
 ![Create User](/assets/NewUser.jpg)<br>
 
-2. Create an App Registeration as outlined in the following section.
+2. Create an App Registeration as outlined in the following section.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/AppRegisteration.MD" target="_blank">How To - Create App Registeration</a>
 
 
