@@ -175,5 +175,5 @@ Since we are subscribing to change notifications for Share Mailboxes, if we plan
 
 # ARM Template - For this example
 You will find the ARM template for this Logic App via the following link.
-<a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/" target="_blank">How To - Create App Registeration</a>
+<a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/assets/" target="_blank">How To - Create App Registeration</a>
 
