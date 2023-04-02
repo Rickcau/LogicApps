@@ -162,3 +162,8 @@ At this point, you would add your business logic to the ***application/json Case
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD" target="_blank">How To - Create Graph Subscriptions</a>
+
+### Create the Service Account and App Registeration in Azure Active Directory ###
+Since we are subscribing to change notifications for Share Mailboxes, if we plan to take action on those notifications i.e. move message, read message or other actions, we will need use a Service Account and Create an App Registeration. <br>
+
+1. You will need proper permissions to create a user in Azure Active Directory.
