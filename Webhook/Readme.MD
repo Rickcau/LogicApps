@@ -40,3 +40,5 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
  
  4. Let's add a Switch Action so we can check the Content-Type for **text/plain** or for **application/json**. If the Content-Type is **text/plain** we know we have a Validation Token, if it’s **application/json** we know we have a change notification and we can process accordingly. 
  ![Switch](/assets/Switch.jpg)
+ 
+ 5. 
