@@ -45,5 +45,65 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
 ![Switch](/assets/SwitchPlain.jpg)
 
 6. Now, we need to add the logic for Change Notifications, which means the Content-Type is set to **application/json**.  In this case, the request body will need a different schema.<br>
-![Switch](/assets/SwitchJSON.jpg)
-
+![Switch](/assets/SwitchJSON.jpg)<br>
+    The schema that you will use for the **Parse JSON HTTP Trigger Body** is as follows:
+    ~~~
+    {
+    "properties": {
+        "value": {
+            "items": {
+                "properties": {
+                    "changeType": {
+                        "type": "string"
+                    },
+                    "clientState": {
+                        "type": "string"
+                    },
+                    "resource": {
+                        "type": "string"
+                    },
+                    "resourceData": {
+                        "properties": {
+                            "@@odata.id": {
+                                "type": "string"
+                            },
+                            "@@odata.type": {
+                                "type": "string"
+                            },
+                            "activity": {
+                                "type": "string"
+                            },
+                            "availability": {
+                                "type": "string"
+                            },
+                            "id": {}
+                        },
+                        "type": "object"
+                    },
+                    "subscriptionExpirationDateTime": {
+                        "type": "string"
+                    },
+                    "subscriptionId": {
+                        "type": "string"
+                    },
+                    "tenantId": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "subscriptionId",
+                    "clientState",
+                    "changeType",
+                    "resource",
+                    "subscriptionExpirationDateTime",
+                    "resourceData",
+                    "tenantId"
+                ],
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+    }
+    ~~~
