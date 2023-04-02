@@ -122,6 +122,7 @@ At this point, you would add your business logic to the ***application/json Case
 ![HTTP oAuth](/assets/HTTPGetAuth.jpg)<br>
 
 2. Now, we need to extract the oAuth Token from the POST request, so we use a Parse JSON action to do this.
+![Parse Auth](/assets/ParseAuth.jpg)<br>
 
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
