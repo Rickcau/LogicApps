@@ -112,9 +112,9 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
     body('Parse_JSON')['value'][0]['resourceData']['id']
     ~~~
 <br>
-### Add business logic
+### Add business logic ###
 At this point, you would add your business logic to the **application/json Case section**.
 
-### Create the Graph Subscription
+### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD" target="_blank">How To - Create Graph Subscriptions</a>
