@@ -116,7 +116,9 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
 ### Let's implement the logic to parse the Validation Token ###
 
 ### Add business logic ### 
-At this point, you would add your business logic to the ***application/json Case section***. <br>
+At this point, you would add your business logic to the ***application/json Case section***. For example, if you wanted to get the subject line of the message for a Shared Mailbox, you would need to implement the following logic.<br>
+
+1. Send an HTTP POST request to https://login.microsoftonline.com/ to acquire an oAuth Token.  Since we are using Shared Mailboxes the Graph Permissions, we need can only be granted when using delegation, so we must use a Service Account for this.
 
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
