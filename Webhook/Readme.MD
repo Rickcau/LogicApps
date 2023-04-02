@@ -107,3 +107,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
     "type": "object"
     }
     ~~~
+    Note that in the **Compose MessageID** action I am able to extract that **id** of the message without using a Loop, which is much more efficient.  I am using the following expression to drill into the **id**.<br>
+    ~~~
+    body('Parse_JSON')['value'][0]['resourceData']['id']
+    ~~~
