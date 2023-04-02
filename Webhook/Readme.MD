@@ -157,7 +157,7 @@ At this point, you would add your business logic to the ***application/json Case
     ~~~
 
 3. Next, we set the **szAuthorizationHeaderValue** variable that we created eariler as we will use this to pass the **Bearer** Token to the Graph API so we can read the subject line of the message.<br>
-![Set Var Call Graph](/assets/HTTPGetAuth.jpg)<br>
+![Set Var Call Graph](/assets/SetAuthGetMessage.jpg)<br>
 
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
