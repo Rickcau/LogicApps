@@ -174,6 +174,8 @@ Since we are subscribing to change notifications for Share Mailboxes, if we plan
 ![GetAuthToken](/assets/HTTPGetAuth.jpg)<br>
 
 # ARM Template - For this example
-You will find the ARM template for this Logic App via the following link.
-<a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/assets/" target="_blank">How To - Create App Registeration</a>
+You will find the ARM template for this Logic App via the following link.<br>
+<a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/assets/LA-WebHook-ARM-Template.zip" target="_blank">Logic App Webhook ARM Template</a>
+
+You will need to search the ARM Template for all items wrapper in **< >** and replace those items to match your environment.
 
