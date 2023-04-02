@@ -43,3 +43,7 @@ In this example, we create a Logic App that is used as a Webhook to Graph Change
  
  5. Let's add the logic for the Validation Token, which means the Content-Type is set to **text/plain**.  We know that when we get a Validation Token that we need to respond with a 200 and also set the response body to be the Validation Token that was sent to us.<br>
 ![Switch](/assets/SwitchPlain.jpg)
+
+6. Now, we need to add the logic for Change Notifications, which means the Content-Type is set to **application/json**.  In this case, the request body will need a different schema.<br>
+![Switch](/assets/SwitchJSON.jpg)
+
