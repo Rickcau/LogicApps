@@ -121,6 +121,8 @@ At this point, you would add your business logic to the ***application/json Case
 1. Send an HTTP POST request to https://login.microsoftonline.com/ to acquire an oAuth Token.  Since we are using Shared Mailboxes the Graph Permissions, we need can only be granted when using delegation, so we must use a Service Account for this.
 ![HTTP oAuth](/assets/HTTPGetAuth.jpg)<br>
 
+2. Now, we need to extract the oAuth Token from the POST request, so we use a Parse JSON action to do this.
+
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD" target="_blank">How To - Create Graph Subscriptions</a>
