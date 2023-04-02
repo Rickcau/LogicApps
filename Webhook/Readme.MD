@@ -124,6 +124,35 @@ At this point, you would add your business logic to the ***application/json Case
 2. Now, we need to extract the oAuth Token from the POST request, so we use a Parse JSON action to do this.
 ![Parse Auth](/assets/ParseAuth.jpg)<br>
 
+The schema that you need to use in the Parse JSON action is as follows:
+    ~~~
+        {
+        "properties": {
+            "access_token": {
+                "type": "string"
+            },
+            "expires_in": {
+                "type": "string"
+            },
+            "expires_on": {
+                "type": "string"
+            },
+            "ext_expires_in": {
+                "type": "string"
+            },
+            "not_before": {
+                "type": "string"
+            },
+            "resource": {
+                "type": "string"
+            },
+            "token_type": {
+                "type": "string"
+            }
+          },
+          "type": "object"
+       }
+    ~~~
 ### Create the Graph Subscription ###
 In order to use this Logic App as a Webhook for a Graph Subscription, you will need to create the subscription.  Read the details in the following section for how to create the subscription.<br>
 <a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD" target="_blank">How To - Create Graph Subscriptions</a>
