@@ -1,5 +1,5 @@
-# LogicApps
-### Logic App repo for useful examples ###
+# Logic Apps
+### Patterns and Practices ###
 The following examples are included in this repo:
 <ul>
   <li><a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/Readme.MD" target="_blank">Using a Logic App as a WebHook for a Shared Mail Box</a>
