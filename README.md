@@ -2,7 +2,7 @@
 ### Logic App repo for useful examples ###
 The following examples are included in this repo:
 <ul>
-  <li><a href="https://github.com/Rickcau/LogicApps/blob/main/WebHook/Readme.MD" target="_blank">Using a Logic App as a WebHook for a Shared Mail Box</a>
+  <li><a href="https://github.com/Rickcau/LogicApps/blob/main/Webhook/Readme.MD" target="_blank">Using a Logic App as a WebHook for a Shared Mail Box</a>
   </li>
    <li><a href="https://github.com/Rickcau/LogicApps/blob/main/Graph%20Subscriptions.MD#" target="_blank">Using a Logic App to Move Messages in a Shared Mail Box **TBD**</a>
   </li>
