@@ -8,6 +8,9 @@ Graph Explorer is a handy tool and should be used to test the various endpoints 
 | Graph Explorer     | https://developer.microsoft.com/en-us/graph/graph-explorer     |
 | Graph Subscriptions | https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http |
 
+*
+https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&tabs=http
+
 # Examples
 ### Creating a Change Notification for subscription for emails in a Shared Mailbox ###
 You can create a subscription by send a POST request to the subscriptions endpoint and in the Request body passing the proper JSON.  Below is an example of that the JSON shoujld look like.
