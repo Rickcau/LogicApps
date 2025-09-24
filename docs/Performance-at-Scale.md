@@ -148,7 +148,7 @@ The path forward requires balancing immediate performance needs with long-term s
 
 Based on your saturated App Service Plan with hundreds of workflows, implement these critical actions immediately to achieve rapid performance improvements and cost reductions:
 
-**Infrastructure Scaling (Week 1-2)**
+### **Infrastructure Scaling (Week 1-2)**
 
 • **Choose your App Service Plan architecture**: **Single Plan Approach** - Scale up your current App Service Plan to WS2 or WS3 SKU and create multiple Logic App instances (10-15 workflows each) within the same plan, OR **Multiple Plans Approach** - Distribute your workflows across multiple smaller App Service Plans for better isolation and independent scaling ([WS SKU performance benchmarks](https://azureaggregator.wordpress.com/2022/05/10/logic-apps-standard-performance-benchmark-burst-workloads/), [Microsoft WS plan comparison](https://learn.microsoft.com/en-us/answers/questions/1195878/what-is-the-difference-between-app-service-plan-an))
 
