@@ -1,4 +1,10 @@
 # Logic Apps
+### Logic Apps Performance at Scale
+Organizations running hundreds of Logic Apps workflows on saturated App Service Plans face complex performance challenges requiring both immediate optimization and strategic architecture decisions. This comprehensive analysis reveals proven solutions that can deliver 60-70% cost reductions and 2-3x performance improvements, with enterprise ROI reaching 295% over three years.
+The critical insight is that while Logic Apps Standard provides robust scaling capabilities, success at scale requires careful architecture planning, proactive performance optimization, and often hybrid approaches combining multiple Azure services. Organizations achieving the best results implement multi-pronged strategies addressing infrastructure scaling, workflow optimization, monitoring, and strategic migration planning
+
+For more information on optimization strategies please review the following document by clicking 👉 [here](./docs/Performance-at-Scale.md).
+
 ### Patterns and Practices ###
 The following examples are included in this repo:
 <ul>
