@@ -158,7 +158,7 @@ Based on your saturated App Service Plan with hundreds of workflows, implement t
 
 • **Implement connection pooling** by creating multiple connection objects to the same destination services across your Logic App instances ([storage considerations guide](https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations))
 
-**Workflow Optimization (Week 2-3)**
+### **Workflow Optimization (Week 2-3)**
 
 • **Audit and consolidate workflows** - target 10-15 workflows per Logic App instance maximum ([workflow organization best practices](https://keithjenneke.medium.com/how-to-organise-workflows-with-logic-apps-standard-812fc1c85e2a))
 
@@ -170,7 +170,7 @@ Based on your saturated App Service Plan with hundreds of workflows, implement t
 
 • **Implement batching** for high-volume scenarios using trigger batching configurations ([debatching optimization patterns](https://prashantbiztalkblogs.wordpress.com/2025/01/18/mastering-for-each-loops-in-logic-apps-best-practices-and-pitfalls/))
 
-**Monitoring Implementation (Week 1)**
+### **Monitoring Implementation (Week 1)**
 
 • **Enable Application Insights v2** with enhanced telemetry immediately ([Application Insights configuration](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-overview))
 
@@ -180,7 +180,7 @@ Based on your saturated App Service Plan with hundreds of workflows, implement t
 
 • **Create Azure Monitor workbooks** for real-time dashboard visibility across all workflows ([advanced KQL performance queries](https://azuretechinsider.com/advanced-kql-queries-logic-apps-application-insights/))
 
-**Cost Optimization (Week 2-4)**
+### **Cost Optimization (Week 2-4)**
 
 • **Purchase App Service Plan reservations** for immediate 30-55% cost savings on predictable workloads ([Logic Apps pricing models](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing), [cost optimization strategies](https://intercept.cloud/en-gb/blogs/azure-logic-apps-pricing))
 
@@ -190,7 +190,7 @@ Based on your saturated App Service Plan with hundreds of workflows, implement t
 
 • **Implement environment-specific scaling** policies to match actual usage patterns ([Standard vs Consumption cost analysis](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing))
 
-**Performance Troubleshooting (Week 1)**
+### **Performance Troubleshooting (Week 1)**
 
 • **Identify storage account bottlenecks** - monitor request rates approaching 2,000 requests/second ([storage scalability limits](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config))
 
@@ -200,7 +200,7 @@ Based on your saturated App Service Plan with hundreds of workflows, implement t
 
 • **Document current baseline metrics** for execution times, error rates, and throughput per workflow ([monitoring best practices](https://azuretechinsider.com/azure-logic-apps-analytics-kql-queries/))
 
-**Strategic Planning (Week 3-4)**
+### **Strategic Planning (Week 3-4)**
 
 • **Classify workflows by criticality** - identify candidates for Azure Functions migration ([Azure Functions performance comparison](https://jeroen-vdb.medium.com/comparing-azure-functions-and-logic-apps-performance-32eee461976))
 
