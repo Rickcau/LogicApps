@@ -149,40 +149,65 @@ The path forward requires balancing immediate performance needs with long-term s
 Based on your saturated App Service Plan with hundreds of workflows, implement these critical actions immediately to achieve rapid performance improvements and cost reductions:
 
 **Infrastructure Scaling (Week 1-2)**
+
 • **Choose your App Service Plan architecture**: **Single Plan Approach** - Scale up your current App Service Plan to WS2 or WS3 SKU and create multiple Logic App instances (10-15 workflows each) within the same plan, OR **Multiple Plans Approach** - Distribute your workflows across multiple smaller App Service Plans for better isolation and independent scaling ([WS SKU performance benchmarks](https://azureaggregator.wordpress.com/2022/05/10/logic-apps-standard-performance-benchmark-burst-workloads/), [Microsoft WS plan comparison](https://learn.microsoft.com/en-us/answers/questions/1195878/what-is-the-difference-between-app-service-plan-an))
+
 • **Configure multiple storage accounts** (up to 32) using `Runtime.ScaleUnitsCount` in host.json to distribute workload across your chosen architecture ([Microsoft scaling documentation](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config), [step-by-step configuration guide](https://techcommunity.microsoft.com/blog/integrationsonazureblog/scaling-logic-app-standard-for-high-throughput-scenarios/3866731))
+
 • **Optimize elastic scale-out settings** - increase Maximum Burst to 30-50 instances for hundreds of workflows and consider setting Minimum Instances to 2-3 to avoid cold starts ([Logic Apps autoscale behavior](https://stackoverflow.com/questions/74549465/autoscale-documentation-for-azure-logic-apps-standard))
+
 • **Implement connection pooling** by creating multiple connection objects to the same destination services across your Logic App instances ([storage considerations guide](https://learn.microsoft.com/en-us/azure/azure-functions/storage-considerations))
 
 **Workflow Optimization (Week 2-3)**
+
 • **Audit and consolidate workflows** - target 10-15 workflows per Logic App instance maximum ([workflow organization best practices](https://keithjenneke.medium.com/how-to-organise-workflows-with-logic-apps-standard-812fc1c85e2a))
+
 • **Replace ForEach loops with SplitOn** wherever possible for array processing ([SplitOn vs ForEach performance comparison](https://prashantbiztalkblogs.wordpress.com/2025/04/20/debatching-in-logic-apps-with-performance-in-mind/), [SplitOn implementation guide](https://www.serverlessnotes.com/docs/logic-apps-scale-workloads-using-spliton))
+
 • **Enable concurrency settings** - set ForEach concurrency to 20-50 based on external service limits ([concurrency control examples](https://turbo360.com/blog/logic-app-best-practices-foreach-parallelism), [advanced concurrency patterns](https://mlogdberg.com/logicapps/concurrency-control))
+
 • **Switch to built-in connectors** instead of managed connectors for HTTP, Service Bus, and storage operations ([built-in vs managed connector performance](https://learn.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare), [connector comparison guide](https://learn.microsoft.com/en-us/azure/connectors/managed))
+
 • **Implement batching** for high-volume scenarios using trigger batching configurations ([debatching optimization patterns](https://prashantbiztalkblogs.wordpress.com/2025/01/18/mastering-for-each-loops-in-logic-apps-best-practices-and-pitfalls/))
 
 **Monitoring Implementation (Week 1)**
+
 • **Enable Application Insights v2** with enhanced telemetry immediately ([Application Insights configuration](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps-overview))
+
 • **Configure tracked properties** for business-critical workflows to monitor SLAs ([tracked properties setup guide](https://azuretechinsider.com/logic-apps-tracked-properties-application-insights/), [KQL query examples](https://azuretechinsider.com/azure-logic-apps-analytics-kql-queries/))
+
 • **Set up critical alerts** for failure rates >5%, performance degradation >50% baseline, storage throttling ([monitoring queries guide](https://learn.microsoft.com/en-us/azure/logic-apps/create-monitoring-tracking-queries))
+
 • **Create Azure Monitor workbooks** for real-time dashboard visibility across all workflows ([advanced KQL performance queries](https://azuretechinsider.com/advanced-kql-queries-logic-apps-application-insights/))
 
 **Cost Optimization (Week 2-4)**
+
 • **Purchase App Service Plan reservations** for immediate 30-55% cost savings on predictable workloads ([Logic Apps pricing models](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing), [cost optimization strategies](https://intercept.cloud/en-gb/blogs/azure-logic-apps-pricing))
+
 • **Schedule dev/test environments** to shut down during non-business hours ([Azure pricing calculator guide](https://azure.microsoft.com/en-us/pricing/details/logic-apps/))
+
 • **Audit connector usage** and replace expensive managed connectors with HTTP actions where possible ([built-in vs managed connector costs](https://vnbconsulting.com/2025/08/azure-logic-apps-pricing-explained-consumption-vs-standard-plans/), [connector pricing comparison](https://stackoverflow.com/questions/74625594/azure-logic-app-built-in-vs-managed-connectors))
+
 • **Implement environment-specific scaling** policies to match actual usage patterns ([Standard vs Consumption cost analysis](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-pricing))
 
 **Performance Troubleshooting (Week 1)**
+
 • **Identify storage account bottlenecks** - monitor request rates approaching 2,000 requests/second ([storage scalability limits](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config))
+
 • **Review external service timeouts** and implement retry policies with exponential backoff ([timeout configuration guide](https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-limits-and-config))
+
 • **Analyze workflow execution patterns** using KQL queries to identify the top 20% causing 80% of load ([performance analysis queries](https://pacodelacruz.io/monitoring-logic-apps-standard-with-app-insights-querying))
+
 • **Document current baseline metrics** for execution times, error rates, and throughput per workflow ([monitoring best practices](https://azuretechinsider.com/azure-logic-apps-analytics-kql-queries/))
 
 **Strategic Planning (Week 3-4)**
+
 • **Classify workflows by criticality** - identify candidates for Azure Functions migration ([Azure Functions performance comparison](https://jeroen-vdb.medium.com/comparing-azure-functions-and-logic-apps-performance-32eee461976))
+
 • **Evaluate Service Bus Premium** for high-volume messaging scenarios (>1,000 messages/second) ([Service Bus scalability patterns](https://multishoring.com/blog/building-scalable-event-driven-architectures-with-azure-event-grid-and-service-bus/))
+
 • **Plan hybrid architecture** combining Logic Apps orchestration with Azure Functions for complex logic ([hybrid integration patterns](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/background-jobs))
+
 • **Assess team readiness** for pro-code alternatives and provide training roadmap if needed ([migration decision framework](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-task-scheduler/choose-orchestration-framework))
 
 These recommendations can deliver **40-60% performance improvement** and **30-50% cost reduction** within the first month while establishing the foundation for long-term scalability and potential migration strategies.
